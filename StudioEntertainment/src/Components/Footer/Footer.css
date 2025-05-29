@@ -1,0 +1,38 @@
+footer{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    border-top: 1px solid white;
+    padding-top : 30px;
+}
+.footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content{
+    width: 38%;
+}
+.logo h1,p{
+
+    margin: 0;
+}
+.logo{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.payment img {
+   height: 50px;
+    border-radius: 8px;
+}
+
+.quicklinks li{
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
