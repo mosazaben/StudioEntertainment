@@ -4,7 +4,7 @@ import axios from "axios";
 import { FaRegClock } from "react-icons/fa";
 
 const Details = () => {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState({});
     const {title} = useParams();
     useEffect(() => {
         axios.get("https://run.mocky.io/v3/2cc0b36b-7d60-4781-bb39-65986be979cc")
@@ -24,13 +24,13 @@ const Details = () => {
                 <h1>{data.title}</h1>
                 <div className="genres">
                     {
-                        data.genres.map(item => (
+                        data.genres?.map(item => (
                             <span key={item}>{item}</span>
                         ))
                     }
 
                 </div>
-                <p>{data.details.description}</p>
+                <p>{data.details?.description}</p>
                 <div>
                     <span><FaRegClock /><p></p></span>
                     <span><p></p></span>
