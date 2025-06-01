@@ -4,6 +4,7 @@ import Commingsooncard from "./Commingsooncard.jsx";
 import './Home.css'
 import {VscDebugStart} from "react-icons/vsc";
 import {IoTicketSharp} from "react-icons/io5";
+import {Link} from "react-router-dom";
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
     }, [])
     return (
         <>
+            <Link to="/details/Joker">
             <div className="mainCard">
                 <div className="mainCard-details">
                     <h1>Joker</h1>
@@ -34,6 +36,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+        </Link>
             <div className="days-buttons">
                 <h1>Now Showing</h1>
                 <span className="days-buttons-span">
