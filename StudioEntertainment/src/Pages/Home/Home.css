@@ -1,0 +1,135 @@
+
+.mainCard{
+    background-image: url('../../../public/img/joker_ghphpw.webp');
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 680px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+
+}
+.mainCard-details{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgb(239, 174, 38);
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    width: fit-content;
+    height: 100px;
+    color: #cfcfcf;
+
+}
+.mainCard-details h1{
+    font-size: 40px;
+    margin-top : 0;
+}
+.mainCard-details-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    font-size: 16px ;
+    font-weight: bold;
+}
+
+.mainCard-details-buttons-book{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.icon{
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.yello-div{
+    background-color: rgb(239, 174, 38);
+    width: 100%;
+    height: 100px;
+    border-radius: 12px;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: black;
+}
+.days-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 40px 0;
+}
+.days-buttons-span button{
+    width: fit-content;
+    color: #cfcfcf;
+    background-color: #373737;
+
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+    border: 2px solid #373737;
+
+}
+.days-buttons-span button:hover{
+
+
+    border: 2px solid rgb(239, 174, 38);
+}
+.days-buttons-span button:focus{
+
+
+    border: 2px solid rgb(239, 174, 38);
+}
+@media screen and (max-width: 1024px) {
+    .days-buttons{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+        flex-wrap: wrap;
+
+    }
+    .days-buttons-span button{
+        font-size: 14px;
+        width: 45%;
+        margin: 0;
+    }
+    .days-buttons-span{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .mainCard-details{
+        width: 85%;
+
+    }
+}
